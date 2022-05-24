@@ -1,0 +1,272 @@
+header img {
+    150px
+}
+body {
+    height: 125vh;
+    background-image: url("../multimedia/fondo-con-transparencia-3.jpg");
+    background-size: cover;
+    font-family: font-family: 'Nunito', sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+}
+header {
+    background-image: url(../multimedia/madera-oscura.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+}
+header *{
+    display: inline;
+}
+header li {
+    margin: 20px;
+}
+header li a {
+    color: #ffff;
+    text-decoration: none;
+    font-size: x-large;
+    text-align: right;
+    padding: 30px 50px 0 0;
+    font-weight: 300;
+    margin-right: 10px;
+}
+header li a:hover {
+    text-decoration: underline;
+    
+}
+main {
+    padding: 30px;
+    margin-top: 150px;
+}
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo {
+    color: #7a3401;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.principal {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.principal h1 {
+    font-size: 50px;
+    color: #7a3401;
+}
+.principal h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #7a3401;
+}
+/* la Parte Sobre nosotros */
+.contenedor-sobre-nosotros img{
+    width: 48%;
+}
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+}
+.sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+.contenido-textos h3{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background-color: #7a3401;
+    color: #ffff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.contenido-textos p {
+    padding: 0 0 30px 15px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: justify;
+}
+/*Galeria*/
+.contenedor-grid{
+    display: grid;
+    grid-template-rows: repeat( 3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}
+
+/* seccion about us*/
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+.servicio-ind img {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 15px;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+/*footer*/
+footer {
+    padding: 15px 0 5px 0;
+    margin: auto;
+    overflow: hidden;
+    background-color:#eadfcb;
+}
+.rrss-contenedora {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.rrss{
+    text-align: left;
+}
+footer img{
+    width: 5%;
+    height: 5%;
+}
+/* con List style le saco las viñetas de la lista*/
+.rrss-interior .redes {
+    list-style: none;
+}
+
+
+.whatsapp {
+    position: fixed;
+    top: auto;
+    bottom: 15px;
+    right: 15px;
+}
+.whatsapp img {
+    width: 120px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside section section"
+    "aside section section"
+    "footer footer footer";
+}
+.grid-header {
+    grid-area: header;
+}
+.grid-aside  {
+    grid-area: aside;
+}
+.grid-descripcion {
+    grid-area: section;
+}
+.grid-footer {
+    grid-area: footer;
+    display: block
+}
+/* en este formulario utilice: en el form un width del 90% un (ancho maximo) max width de 400px, ademas de que todas las columnas van a medir 100%-- No es un form Funcional xq todavia no lo vimos*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300;400;700&display=swap');
+
+.principal-contacto{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+} 
+.form{
+    background-color: #f2f2f2;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form-input {
+    font-family: inherit;
+    font-size: 1rem; /*16px por defecto*/
+    padding: .8em 1em;/* arriba y abajo - lados y en este caso tambien es de 16px x la variante em*/
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0b0;
+    border-radius: 0.2em;
+}
+.form-input--message{
+    resize: none; /*evito q el area del msj se deforme y crezca*/
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+.form-cta {
+    font-family: inherit;
+    background-color: #7a3401;
+    color: #ffff;
+    border: none;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400; /*un poco mas pesada la fuente con esto*/
+
+}
+.form-title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+/*preguntas frecuentes*/
+.preguntas{
+    display: grid;
+    grid-auto-columns: 100%;
+}
+.preguntas h2{
+    font-size: 3em;
+    font-weight: 300;
+}
+.preguntas h3 {
+    font-weight: 300;
+    font-size: 2em;
+}
+.preguntas h4{
+    font-size: 1.5em;
+}

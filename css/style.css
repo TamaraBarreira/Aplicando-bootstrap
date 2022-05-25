@@ -1,11 +1,11 @@
 header img {
-    150px
+    width: 150px;
 }
 body {
     height: 125vh;
     background-image: url("../multimedia/fondo-con-transparencia-3.jpg");
     background-size: cover;
-    font-family: font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin-top: 80px;
     padding: 30px;
 }

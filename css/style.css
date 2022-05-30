@@ -1,14 +1,7 @@
-header img {
+/*header img {
     width: 150px;
 }
-body {
-    height: 125vh;
-    background-image: url("../multimedia/fondo-con-transparencia-3.jpg");
-    background-size: cover;
-    font-family: 'Nunito', sans-serif;
-    margin-top: 80px;
-    padding: 30px;
-}
+
 header {
     background-image: url(../multimedia/madera-oscura.jpg);
     background-repeat: no-repeat;
@@ -40,11 +33,21 @@ header li a {
 header li a:hover {
     text-decoration: underline;
     
+}*/
+body {
+    height: 125vh;
+    background-image: url("../multimedia/fondo-con-transparencia-3.jpg");
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    /*margin-top: 80px;
+    padding: 30px;*/
 }
+
 main {
     padding: 30px;
-    margin-top: 150px;
+    margin: 5% 3%;
 }
+
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -143,8 +146,21 @@ main {
     font-weight: 300;
     text-align: justify;
 }
-/*footer*/
 footer {
+    background-color: #eadfcb;
+    min-height: 100px;
+}
+footer p {
+    color: #7a3401;
+    text-align: center;  
+}
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #7a3401;
+}
+/*footer*/
+/*footer {
     padding: 15px 0 5px 0;
     margin: auto;
     overflow: hidden;
@@ -165,21 +181,33 @@ footer img{
     width: 5%;
     height: 5%;
 }
-/* con List style le saco las viñetas de la lista*/
 .rrss-interior .redes {
     list-style: none;
-}
-
+}*/
 
 .whatsapp {
     position: fixed;
-    top: auto;
-    bottom: 15px;
-    right: 15px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .5);
+    z-index: 100;
+
 }
-.whatsapp img {
-    width: 120px;
+
+.whatsapp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
 }
+
 
 .grid-container{
     display: grid;

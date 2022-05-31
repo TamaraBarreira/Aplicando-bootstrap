@@ -42,12 +42,53 @@ body {
     /*margin-top: 80px;
     padding: 30px;*/
 }
-
+.navbar-fijo {
+    padding-bottom: 15px;
+}
+.titulo-nav{
+    display: flex;
+    justify-content: center;
+}
 main {
     padding: 30px;
     margin: 5% 3%;
 }
+.main-imagen{
+    background: url(../multimedia/Imagenes/manito.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    width: 100%;
+}
+.texto-del-main{
+    font-size: 4rem;
+    font-weight: 700;
+    
+}
+.btn1 {
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: #7a3401;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 60px;
+}
+.btn1:hover{
+    background-color: #b64d02;
+    transition: 0.5s;
+}
+.card:hover {
+    box-shadow: 0px 17px 32px 5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 17px 32px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 17px 32px 5px rgba(0,0,0,0.75);
+transition: 0.5s;
 
+}
+.texto-alquileres{
+    font-weight: 700;
+}
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -209,7 +250,7 @@ footer img{
 }
 
 
-.grid-container{
+/*.grid-container{
     display: grid;
     grid-template-areas: 
     "header header header"
@@ -229,7 +270,7 @@ footer img{
 .grid-footer {
     grid-area: footer;
     display: block
-}
+}*/
 /* en este formulario utilice: en el form un width del 90% un (ancho maximo) max width de 400px, ademas de que todas las columnas van a medir 100%-- No es un form Funcional xq todavia no lo vimos*/
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300;400;700&display=swap');
 

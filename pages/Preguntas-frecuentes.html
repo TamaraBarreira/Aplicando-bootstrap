@@ -1,65 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saber más</title>
+    <title>Preguntas Frecentes</title>
+    <!-- CSSBTS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- fuentes + favicon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="../multimedia/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <main class="grid-container">
-        <section class="grid-header">
-            <header>
-                <img src="../multimedia/loguito.png" alt="Logo">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/alquileres.html">Alquileres</a></li>
-                        <li><a href="../pages/Compras.html">Compras</a></li>
-                        <li><a href="../pages/Nosotros.html">Nosotros</a></li>
-                        <li><a href="../pages/Contactanos.html">Contactanos</a></li>
-                        <li><a href="../pages/Preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="preguntas">
-                <h2><strong> Preguntas Frecuentes</strong></h2>
-                <h3>¿Qué formas de pago puedo aprovechar para realizar mi compra?</h3>
-                <h4>Podes pagar por Transferencia, Mercado de pago y efecivo</h4>
-                <h3>¿Cuál es el costo de envio?</h3>
-                <h4>dependerá de tu zona, trabajamos con Correo argentino a todo el país</h4>
-                <h3>¿Cuál es el costo de envio?</h3>
-                <h4>El costo de envío será mostrado en base al total de la compra y ubicación, en el checkout, en el
-                    momento previo a la compra.</h4>
-                <h3>¿Cómo se realizan los envíos?</h3>
-                <h4>dependerá de tu zona (llegamos a Pilar y alrededores para los alquileres), y trabajamos con Correo
-                    argentino</h4>
-                <h3>¿Dónde puedo recibir mi pedido?</h3>
-                <h4>Realizamos envíos a todo el país a domicilio o a sucursal por correo argentino.</h4>
-                <h3>¿Cuánto tarda en llegar el pedido, cuando realizo una compra?</h3>
-                <h4>El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se encuentra
-                    entre 1 y 6 días hábiles luego de acreditado el pago. Pero dependerá del producto en cuestión
-                </h4>
-                <h3>¿Cuál es el plazo para realizar un cambio?</h3>
-                <h4>Puedes solicitar un cambio hasta 15 días luego de realizada la compra.</h4>
-            </section>
-    </main>
-    <footer>
-        <h2 class="rrss">Nuestras Redes Sociales</h2>
-        <nav class="rrss-contenedora">
-            <ul class="rrss-interior">
-                <li class="redes"><a href="https://www.instagram.com/costuraexpressymerceria/"><img
-                            src="../multimedia/instagram.png" alt="link de instagram"></a></li>
-                <li class="redes"><a href="https://www.facebook.com/Costura-Express-Mercer%C3%ADa-644421432418914"
-                        alt="link de facebook"><img src="../multimedia/facebook (1).png" alt="Link de facebook"></a></li>
-            </ul>
+    <!-- inicio de header -->
+    <header>
+        <nav class="navbar mt-5 hidden-sm-down bg-light ">
+            <div class="container d-flex justify-content-center">
+                <a class="navbar-brand" href="#">
+                    <img src="../multimedia/loguito.png" alt="" width="150" height="150">
+                </a>
+                <div class="titulo-nav justify-content-center">
+                    <p>
+                        <h1>Una Pizca de Alegría</h1>
+                    </p>
+                </div>
+            </div>
         </nav>
+        <ul class="nav d-flex justify-content-end fixed-top bg-light navbar-fijo">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../pages/alquileres.html">Alquileres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../pages/Compras.html">Compras</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../pages/Contactanos.html">Contactanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../pages/Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item" href="../pages/Preguntas-frecuentes.html">
+                <a class="nav-link active">Preguntas frecuentes</a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- fin de header -->
+    <main>
+        <div class="row">
+            <div class="col-12 principal">
+                <h1 class="texto1">Preguntas Frecuentes</h1>
+            </div>
+            <section></section>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <strong>¿Qué formas de pago puedo aprovechar para realizar mi compra?</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <i>Podes pagar por Transferencia, Mercado de pago y efecivo</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <strong>¿Cuál es el costo de envio?</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <i>dependerá de tu zona, trabajamos con Correo argentino a todo el país. El costo de envío
+                                será mostrado en base al total de la compra y ubicación, en el checkout, en el momento
+                                previo a la compra.</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <strong>¿Cómo se realizan los envíos?</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <i>dependerá de tu zona (llegamos a Pilar y alrededores para los alquileres), y trabajamos
+                                con Correo
+                                argentino para tus Compras.</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <strong>¿Dónde puedo recibir mi pedido? </strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <i>Realizamos envíos a todo el país a domicilio o a sucursal por correo argentino.</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <strong>¿Cuánto tarda en llegar el pedido, cuando realizo una compra?</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <i>El tiempo de entrega dependerá del tipo de envío seleccionado. En general la demora se
+                                encuentra
+                                entre 1 y 6 días hábiles luego de acreditado el pago. Pero dependerá del producto en
+                                cuestión</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <strong>¿Cuál es el plazo para realizar un cambio?</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <i>Puedes solicitar un cambio hasta 15 días luego de realizada la compra.</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+    <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+        <p class="fs-5 px-3 pt-3">Una pizca de alegria &copy; Todos los derechos reservados</p>
+        <div id="iconos">
+            <a href="https://www.facebook.com/Costura-Express-Mercer%C3%ADa-644421432418914"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/tamybarreiraa/"><i class="bi bi-instagram"></i></a>
+        </div>
     </footer>
-    <title>Document</title>
-    </head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 
     <body>
 

@@ -159,13 +159,6 @@ transition: 0.5s;
     height: 80vh;
     width: 100%;
 }
-/*Galeria*/
-.contenedor-grid{
-    display: grid;
-    grid-template-rows: repeat( 3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px
-}
 
 /* seccion about us*/
 .about-services{
@@ -336,22 +329,14 @@ footer img{
         font-size: 2rem;
     }
 }
-/*preguntas frecuentes*/
-.preguntas{
+/*Galeria*/
+/*.contenedor-grid{
     display: grid;
-    grid-auto-columns: 100%;
-}
-.preguntas h2{
-    font-size: 3em;
-    font-weight: 300;
-}
-.preguntas h3 {
-    font-weight: 300;
-    font-size: 2em;
-}
-.preguntas h4{
-    font-size: 1.5em;
-}
+    grid-template-rows: repeat( 3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+}*/
+
 /* aplicando animaciones a mi galeria */
 .gallery__img {
     width: 100%;
